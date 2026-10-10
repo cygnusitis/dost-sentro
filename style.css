@@ -71,7 +71,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Montserrat", sans-serif !important;
+	font-family: "Poppins", sans-serif !important;
 }
 
 p {
@@ -231,9 +231,16 @@ p {
 	min-width: 0;
 }
 
+/* Force all officer avatars into perfect circles */
+.officer-grid img {
+    border-radius: 50% !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
+}
+
 /* Executive Council row: Internal | General Secretary | External */
 .officer-grid--exec {
-	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 /* Committees: 6 cards -> 3 x 2 */

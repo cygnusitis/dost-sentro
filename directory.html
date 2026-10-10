@@ -57,7 +57,7 @@
 					<!-- Directory Section (Dual Column Layout) -->
 					<div class="flex flex-col gap-space-xl w-full pb-space-xl">
 						<!-- SECTION 1: SENTRO Regional Officers -->
-						<section class="w-full flex flex-col gap-space-lg p-space-lg rounded-xl bg-surface-container-low/70 shadow-sm">
+						<section class="w-full flex flex-col gap-space-lg p-space-lg rounded-xl bg-[#397db1]/10 shadow-sm">
 							<div class="flex flex-col gap-space-xs">
 								<div class="flex items-center gap-space-sm">
 									<div class="w-10 h-10 rounded-lg bg-primary-container text-tertiary-fixed-dim flex items-center justify-center shadow-sm">
@@ -76,108 +76,105 @@
 							<div class="flex items-center gap-space-md w-full">
 								<div class="h-px flex-1 bg-outline-variant"></div>
 								<div class="flex items-center gap-space-sm shrink-0">
-									<span class="material-symbols-outlined text-xl text-tertiary-fixed-dim">groups</span>
 									<!-- EDIT: EXECUTIVE_COUNCIL_HEADING -->
 									<h3 class="font-headline-sm text-headline-sm text-primary font-bold text-center">Executive Council</h3>
 								</div>
 								<div class="h-px flex-1 bg-outline-variant"></div>
 							</div>
-							<!-- Level 1: Regional Director (centered) -->
-							<div class="w-full flex justify-center"><div class="max-w-sm w-full flex flex-col items-center text-center p-space-lg bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+							<!-- Executive Council: Regional Director | Deputy Director (Internal) | Deputy Director (External) | General Secretary -->
+							<div class="officer-grid officer-grid--exec w-full">
+<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
 								<!-- EDIT: REGIONAL_DIRECTOR_IMAGE -->
-								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-24 h-24 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
 								<!-- EDIT: REGIONAL_DIRECTOR_NAME -->
-								<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Officer Name</h3>
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
 								<!-- EDIT: REGIONAL_DIRECTOR_ROLE -->
-								<span class="font-label-lg text-label-lg font-semibold text-secondary mt-space-xs">Regional Director</span>
-							</div></div>
-							<!-- Level 2: Deputy Director (Internal) | General Secretary | Deputy Director (External) - one row of 3 -->
-								<div class="officer-grid officer-grid--exec w-full max-w-4xl">
-									<div class="order-1 md:order-1 flex flex-col items-center text-center p-space-lg bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
-										<!-- EDIT: DEPUTY_DIRECTOR_INTERNAL_IMAGE -->
-										<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
-										<!-- EDIT: DEPUTY_DIRECTOR_INTERNAL_NAME -->
-										<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Officer Name</h3>
-										<!-- EDIT: DEPUTY_DIRECTOR_INTERNAL_ROLE -->
-										<span class="font-label-lg text-label-lg font-semibold text-secondary mt-space-xs">Deputy Director for Internal Affairs</span>
-									</div>
-									<div class="order-3 md:order-2 flex flex-col items-center text-center p-space-lg bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
-										<!-- EDIT: GENERAL_SECRETARY_IMAGE -->
-										<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
-										<!-- EDIT: GENERAL_SECRETARY_NAME -->
-										<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Officer Name</h3>
-										<!-- EDIT: GENERAL_SECRETARY_ROLE -->
-										<span class="font-label-lg text-label-lg font-semibold text-secondary mt-space-xs">General Secretary</span>
-									</div>
-									<div class="order-2 md:order-3 flex flex-col items-center text-center p-space-lg bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
-										<!-- EDIT: DEPUTY_DIRECTOR_EXTERNAL_IMAGE -->
-										<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
-										<!-- EDIT: DEPUTY_DIRECTOR_EXTERNAL_NAME -->
-										<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Officer Name</h3>
-										<!-- EDIT: DEPUTY_DIRECTOR_EXTERNAL_ROLE -->
-										<span class="font-label-lg text-label-lg font-semibold text-secondary mt-space-xs">Deputy Director for External Affairs</span>
-									</div>
-								</div>
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Regional Director</span>
 							</div>
-							<!-- TIER 2: Committees -->
+<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+								<!-- EDIT: DEPUTY_DIRECTOR_INTERNAL_IMAGE -->
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<!-- EDIT: DEPUTY_DIRECTOR_INTERNAL_NAME -->
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
+								<!-- EDIT: DEPUTY_DIRECTOR_INTERNAL_ROLE -->
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Deputy Director for Internal Affairs</span>
+							</div>
+<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+								<!-- EDIT: DEPUTY_DIRECTOR_EXTERNAL_IMAGE -->
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<!-- EDIT: DEPUTY_DIRECTOR_EXTERNAL_NAME -->
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
+								<!-- EDIT: DEPUTY_DIRECTOR_EXTERNAL_ROLE -->
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Deputy Director for External Affairs</span>
+							</div>
+<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+								<!-- EDIT: GENERAL_SECRETARY_IMAGE -->
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<!-- EDIT: GENERAL_SECRETARY_NAME -->
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
+								<!-- EDIT: GENERAL_SECRETARY_ROLE -->
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">General Secretary</span>
+							</div>
+							</div>
+							</div>
+<!-- TIER 2: Committees -->
 							<div class="flex flex-col gap-space-lg items-center w-full">
 							<div class="flex items-center gap-space-md w-full">
 								<div class="h-px flex-1 bg-outline-variant"></div>
 								<div class="flex items-center gap-space-sm shrink-0">
-									<span class="material-symbols-outlined text-xl text-tertiary-fixed-dim">workspaces</span>
 									<!-- EDIT: COMMITTEES_HEADING -->
 									<h3 class="font-headline-sm text-headline-sm text-primary font-bold text-center">Committees</h3>
 								</div>
 								<div class="h-px flex-1 bg-outline-variant"></div>
 							</div>
 							<div class="officer-grid officer-grid--committees w-full">
-							<div class="flex flex-col items-center text-center p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+							<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
 								<!-- EDIT: COMMITTEE_FINANCE_BUSINESS_HEAD_IMAGE -->
-								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-16 h-16 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
 								<!-- EDIT: COMMITTEE_FINANCE_BUSINESS_HEAD_NAME -->
-								<h4 class="font-body-md text-body-md font-bold text-on-surface">Officer Name</h4>
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
 								<!-- EDIT: COMMITTEE_FINANCE_BUSINESS_HEAD_ROLE -->
-								<span class="font-label-md text-label-md font-semibold text-secondary mt-space-xs">Finance and Business Head</span>
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Finance and Business Head</span>
 							</div>
-							<div class="flex flex-col items-center text-center p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+							<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
 								<!-- EDIT: COMMITTEE_CREATIVES_HEAD_IMAGE -->
-								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-16 h-16 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
 								<!-- EDIT: COMMITTEE_CREATIVES_HEAD_NAME -->
-								<h4 class="font-body-md text-body-md font-bold text-on-surface">Officer Name</h4>
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
 								<!-- EDIT: COMMITTEE_CREATIVES_HEAD_ROLE -->
-								<span class="font-label-md text-label-md font-semibold text-secondary mt-space-xs">Creatives Head</span>
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Creatives Head</span>
 							</div>
-							<div class="flex flex-col items-center text-center p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+							<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
 								<!-- EDIT: COMMITTEE_EDUCATION_RESEARCH_HEAD_IMAGE -->
-								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-16 h-16 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
 								<!-- EDIT: COMMITTEE_EDUCATION_RESEARCH_HEAD_NAME -->
-								<h4 class="font-body-md text-body-md font-bold text-on-surface">Officer Name</h4>
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
 								<!-- EDIT: COMMITTEE_EDUCATION_RESEARCH_HEAD_ROLE -->
-								<span class="font-label-md text-label-md font-semibold text-secondary mt-space-xs">Education and Research Head</span>
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Education and Research Head</span>
 							</div>
-							<div class="flex flex-col items-center text-center p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+							<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
 								<!-- EDIT: COMMITTEE_EVENTS_LOGISTICS_HEAD_IMAGE -->
-								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-16 h-16 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
 								<!-- EDIT: COMMITTEE_EVENTS_LOGISTICS_HEAD_NAME -->
-								<h4 class="font-body-md text-body-md font-bold text-on-surface">Officer Name</h4>
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
 								<!-- EDIT: COMMITTEE_EVENTS_LOGISTICS_HEAD_ROLE -->
-								<span class="font-label-md text-label-md font-semibold text-secondary mt-space-xs">Events and Logistics Head</span>
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Events and Logistics Head</span>
 							</div>
-							<div class="flex flex-col items-center text-center p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+							<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
 								<!-- EDIT: COMMITTEE_PUBLICITY_MEDIA_HEAD_IMAGE -->
-								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-16 h-16 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
 								<!-- EDIT: COMMITTEE_PUBLICITY_MEDIA_HEAD_NAME -->
-								<h4 class="font-body-md text-body-md font-bold text-on-surface">Officer Name</h4>
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
 								<!-- EDIT: COMMITTEE_PUBLICITY_MEDIA_HEAD_ROLE -->
-								<span class="font-label-md text-label-md font-semibold text-secondary mt-space-xs">Publicity and Media Head</span>
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Publicity and Media Head</span>
 							</div>
-							<div class="flex flex-col items-center text-center p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+							<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
 								<!-- EDIT: COMMITTEE_MEMBERSHIP_HEAD_IMAGE -->
-								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-16 h-16 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
 								<!-- EDIT: COMMITTEE_MEMBERSHIP_HEAD_NAME -->
-								<h4 class="font-body-md text-body-md font-bold text-on-surface">Officer Name</h4>
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
 								<!-- EDIT: COMMITTEE_MEMBERSHIP_HEAD_ROLE -->
-								<span class="font-label-md text-label-md font-semibold text-secondary mt-space-xs">Membership Head</span>
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Membership Head</span>
 							</div>
 							</div></div>
 							<!-- TIER 3: Provincial Representatives (4 per row on desktop, last row centered) -->
@@ -185,68 +182,67 @@
 							<div class="flex items-center gap-space-md w-full">
 								<div class="h-px flex-1 bg-outline-variant"></div>
 								<div class="flex items-center gap-space-sm shrink-0">
-									<span class="material-symbols-outlined text-xl text-tertiary-fixed-dim">map</span>
 									<!-- EDIT: PROVINCIAL_REPRESENTATIVES_HEADING -->
 									<h3 class="font-headline-sm text-headline-sm text-primary font-bold text-center">Provincial Representatives</h3>
 								</div>
 								<div class="h-px flex-1 bg-outline-variant"></div>
 							</div>
 							<div class="officer-grid officer-grid--provincial w-full">
-							<div class="flex flex-col items-center text-center p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+							<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
 								<!-- EDIT: PROVINCIAL_AURORA_REP_IMAGE -->
-								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-16 h-16 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
 								<!-- EDIT: PROVINCIAL_AURORA_REP_NAME -->
-								<h4 class="font-body-md text-body-md font-bold text-on-surface">Officer Name</h4>
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
 								<!-- EDIT: PROVINCIAL_AURORA_REP_ROLE -->
-								<span class="font-label-md text-label-md font-semibold text-secondary mt-space-xs">Aurora Representative</span>
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Aurora Representative</span>
 							</div>
-							<div class="flex flex-col items-center text-center p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+							<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
 								<!-- EDIT: PROVINCIAL_BATAAN_REP_IMAGE -->
-								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-16 h-16 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
 								<!-- EDIT: PROVINCIAL_BATAAN_REP_NAME -->
-								<h4 class="font-body-md text-body-md font-bold text-on-surface">Officer Name</h4>
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
 								<!-- EDIT: PROVINCIAL_BATAAN_REP_ROLE -->
-								<span class="font-label-md text-label-md font-semibold text-secondary mt-space-xs">Bataan Representative</span>
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Bataan Representative</span>
 							</div>
-							<div class="flex flex-col items-center text-center p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+							<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
 								<!-- EDIT: PROVINCIAL_BULACAN_REP_IMAGE -->
-								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-16 h-16 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
 								<!-- EDIT: PROVINCIAL_BULACAN_REP_NAME -->
-								<h4 class="font-body-md text-body-md font-bold text-on-surface">Officer Name</h4>
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
 								<!-- EDIT: PROVINCIAL_BULACAN_REP_ROLE -->
-								<span class="font-label-md text-label-md font-semibold text-secondary mt-space-xs">Bulacan Representative</span>
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Bulacan Representative</span>
 							</div>
-							<div class="flex flex-col items-center text-center p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+							<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
 								<!-- EDIT: PROVINCIAL_NUEVA_ECIJA_REP_IMAGE -->
-								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-16 h-16 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
 								<!-- EDIT: PROVINCIAL_NUEVA_ECIJA_REP_NAME -->
-								<h4 class="font-body-md text-body-md font-bold text-on-surface">Officer Name</h4>
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
 								<!-- EDIT: PROVINCIAL_NUEVA_ECIJA_REP_ROLE -->
-								<span class="font-label-md text-label-md font-semibold text-secondary mt-space-xs">Nueva Ecija Representative</span>
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Nueva Ecija Representative</span>
 							</div>
-							<div class="flex flex-col items-center text-center p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+							<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
 								<!-- EDIT: PROVINCIAL_PAMPANGA_REP_IMAGE -->
-								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-16 h-16 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
 								<!-- EDIT: PROVINCIAL_PAMPANGA_REP_NAME -->
-								<h4 class="font-body-md text-body-md font-bold text-on-surface">Officer Name</h4>
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
 								<!-- EDIT: PROVINCIAL_PAMPANGA_REP_ROLE -->
-								<span class="font-label-md text-label-md font-semibold text-secondary mt-space-xs">Pampanga Representative</span>
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Pampanga Representative</span>
 							</div>
-							<div class="flex flex-col items-center text-center p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+							<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
 								<!-- EDIT: PROVINCIAL_TARLAC_REP_IMAGE -->
-								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-16 h-16 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
 								<!-- EDIT: PROVINCIAL_TARLAC_REP_NAME -->
-								<h4 class="font-body-md text-body-md font-bold text-on-surface">Officer Name</h4>
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
 								<!-- EDIT: PROVINCIAL_TARLAC_REP_ROLE -->
-								<span class="font-label-md text-label-md font-semibold text-secondary mt-space-xs">Tarlac Representative</span>
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Tarlac Representative</span>
 							</div>
-							<div class="flex flex-col items-center text-center p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
+							<div class="flex flex-col items-center text-center py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container">
 								<!-- EDIT: PROVINCIAL_ZAMBALES_REP_IMAGE -->
-								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-16 h-16 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
+								<img src="https://via.placeholder.com/150" alt="Officer Avatar" class="w-20 h-20 rounded-full object-cover mb-space-sm border-2 border-primary-container/20">
 								<!-- EDIT: PROVINCIAL_ZAMBALES_REP_NAME -->
-								<h4 class="font-body-md text-body-md font-bold text-on-surface">Officer Name</h4>
+								<h4 class="font-body-md text-lg font-bold text-on-surface">Officer Name</h4>
 								<!-- EDIT: PROVINCIAL_ZAMBALES_REP_ROLE -->
-								<span class="font-label-md text-label-md font-semibold text-secondary mt-space-xs">Zambales Representative</span>
+								<span class="font-label-md text-base font-semibold text-secondary mt-space-xs">Zambales Representative</span>
 							</div>
 							</div></div>
 							</div>
@@ -263,99 +259,99 @@
 							</div>
 							<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
 								<!-- EDIT: LOCAL_SAO_ITEM_1 -->
-								<div class="flex flex-col p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container gap-space-xs">
+								<div class="flex flex-col py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container gap-space-xs">
 									<div class="flex items-center gap-space-sm">
 										<div class="w-9 h-9 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
 											<span class="material-symbols-outlined text-[20px]">account_balance</span>
 										</div>
 										<div class="flex flex-col min-w-0">
-											<span class="font-body-md text-body-md font-bold text-on-surface">SAO Name</span>
-											<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">University Name</span>
+											<span class="font-body-md text-lg font-bold text-on-surface">SAO Name</span>
+											<span class="font-body-sm text-base text-on-surface-variant font-medium">University Name</span>
 										</div>
 									</div>
 									<div class="mt-space-xs pt-space-xs border-t border-surface-container flex items-center gap-space-xs text-on-surface-variant">
 										<span class="material-symbols-outlined text-[18px] text-secondary">contact_mail</span>
-										<span class="font-label-md text-label-md">sao@university.edu / fb.com/sao-chapter</span>
+										<span class="font-label-md text-sm">sao@university.edu / fb.com/sao-chapter</span>
 									</div>
 								</div>
 								<!-- EDIT: LOCAL_SAO_ITEM_2 -->
-								<div class="flex flex-col p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container gap-space-xs">
+								<div class="flex flex-col py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container gap-space-xs">
 									<div class="flex items-center gap-space-sm">
 										<div class="w-9 h-9 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
 											<span class="material-symbols-outlined text-[20px]">account_balance</span>
 										</div>
 										<div class="flex flex-col min-w-0">
-											<span class="font-body-md text-body-md font-bold text-on-surface">SAO Name</span>
-											<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">University Name</span>
+											<span class="font-body-md text-lg font-bold text-on-surface">SAO Name</span>
+											<span class="font-body-sm text-base text-on-surface-variant font-medium">University Name</span>
 										</div>
 									</div>
 									<div class="mt-space-xs pt-space-xs border-t border-surface-container flex items-center gap-space-xs text-on-surface-variant">
 										<span class="material-symbols-outlined text-[18px] text-secondary">contact_mail</span>
-										<span class="font-label-md text-label-md">sao@university.edu / fb.com/sao-chapter</span>
+										<span class="font-label-md text-sm">sao@university.edu / fb.com/sao-chapter</span>
 									</div>
 								</div>
 								<!-- EDIT: LOCAL_SAO_ITEM_3 -->
-								<div class="flex flex-col p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container gap-space-xs">
+								<div class="flex flex-col py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container gap-space-xs">
 									<div class="flex items-center gap-space-sm">
 										<div class="w-9 h-9 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
 											<span class="material-symbols-outlined text-[20px]">account_balance</span>
 										</div>
 										<div class="flex flex-col min-w-0">
-											<span class="font-body-md text-body-md font-bold text-on-surface">SAO Name</span>
-											<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">University Name</span>
+											<span class="font-body-md text-lg font-bold text-on-surface">SAO Name</span>
+											<span class="font-body-sm text-base text-on-surface-variant font-medium">University Name</span>
 										</div>
 									</div>
 									<div class="mt-space-xs pt-space-xs border-t border-surface-container flex items-center gap-space-xs text-on-surface-variant">
 										<span class="material-symbols-outlined text-[18px] text-secondary">contact_mail</span>
-										<span class="font-label-md text-label-md">sao@university.edu / fb.com/sao-chapter</span>
+										<span class="font-label-md text-sm">sao@university.edu / fb.com/sao-chapter</span>
 									</div>
 								</div>
 								<!-- EDIT: LOCAL_SAO_ITEM_4 -->
-								<div class="flex flex-col p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container gap-space-xs">
+								<div class="flex flex-col py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container gap-space-xs">
 									<div class="flex items-center gap-space-sm">
 										<div class="w-9 h-9 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
 											<span class="material-symbols-outlined text-[20px]">account_balance</span>
 										</div>
 										<div class="flex flex-col min-w-0">
-											<span class="font-body-md text-body-md font-bold text-on-surface">SAO Name</span>
-											<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">University Name</span>
+											<span class="font-body-md text-lg font-bold text-on-surface">SAO Name</span>
+											<span class="font-body-sm text-base text-on-surface-variant font-medium">University Name</span>
 										</div>
 									</div>
 									<div class="mt-space-xs pt-space-xs border-t border-surface-container flex items-center gap-space-xs text-on-surface-variant">
 										<span class="material-symbols-outlined text-[18px] text-secondary">contact_mail</span>
-										<span class="font-label-md text-label-md">sao@university.edu / fb.com/sao-chapter</span>
+										<span class="font-label-md text-sm">sao@university.edu / fb.com/sao-chapter</span>
 									</div>
 								</div>
 								<!-- EDIT: LOCAL_SAO_ITEM_5 -->
-								<div class="flex flex-col p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container gap-space-xs">
+								<div class="flex flex-col py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container gap-space-xs">
 									<div class="flex items-center gap-space-sm">
 										<div class="w-9 h-9 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
 											<span class="material-symbols-outlined text-[20px]">account_balance</span>
 										</div>
 										<div class="flex flex-col min-w-0">
-											<span class="font-body-md text-body-md font-bold text-on-surface">SAO Name</span>
-											<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">University Name</span>
+											<span class="font-body-md text-lg font-bold text-on-surface">SAO Name</span>
+											<span class="font-body-sm text-base text-on-surface-variant font-medium">University Name</span>
 										</div>
 									</div>
 									<div class="mt-space-xs pt-space-xs border-t border-surface-container flex items-center gap-space-xs text-on-surface-variant">
 										<span class="material-symbols-outlined text-[18px] text-secondary">contact_mail</span>
-										<span class="font-label-md text-label-md">sao@university.edu / fb.com/sao-chapter</span>
+										<span class="font-label-md text-sm">sao@university.edu / fb.com/sao-chapter</span>
 									</div>
 								</div>
 								<!-- EDIT: LOCAL_SAO_ITEM_6 -->
-								<div class="flex flex-col p-space-md bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container gap-space-xs">
+								<div class="flex flex-col py-10 px-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-surface-container gap-space-xs">
 									<div class="flex items-center gap-space-sm">
 										<div class="w-9 h-9 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center shrink-0">
 											<span class="material-symbols-outlined text-[20px]">account_balance</span>
 										</div>
 										<div class="flex flex-col min-w-0">
-											<span class="font-body-md text-body-md font-bold text-on-surface">SAO Name</span>
-											<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">University Name</span>
+											<span class="font-body-md text-lg font-bold text-on-surface">SAO Name</span>
+											<span class="font-body-sm text-base text-on-surface-variant font-medium">University Name</span>
 										</div>
 									</div>
 									<div class="mt-space-xs pt-space-xs border-t border-surface-container flex items-center gap-space-xs text-on-surface-variant">
 										<span class="material-symbols-outlined text-[18px] text-secondary">contact_mail</span>
-										<span class="font-label-md text-label-md">sao@university.edu / fb.com/sao-chapter</span>
+										<span class="font-label-md text-sm">sao@university.edu / fb.com/sao-chapter</span>
 									</div>
 								</div>
 							</div>
