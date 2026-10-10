@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta content="web_standard" name="shell-type">
+		<title>DOST-SENTRO</title>
+		<link rel="icon" href="sentroLogo.png" type="image/png">
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="script.js" defer></script>
+	</head>
+	<body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col">
+		<header class="site-header fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+			<div class="site-header-container max-w-7xl mx-auto px-margin-desktop">
+				<div class="h-20 flex items-center justify-between gap-space-lg">
+					<a class="flex items-center gap-space-sm group text-decoration-none" data-path="home" href="index.html">
+						<img alt="DOST-SENTRO Logo" class="h-12 w-12 object-contain shrink-0" src="sentroLogo.png">
+						<div class="flex flex-col">
+							<span class="font-headline-sm text-headline-sm tracking-tight text-primary-container font-bold">
+								<!-- EDIT: NAVBAR_BRAND -->DOST-SENTRO
+							</span>
+						</div>
+					</a>
+					<nav id="site-nav" class="site-nav items-center gap-space-lg h-full" aria-label="Primary" data-active-classes="text-on-surface font-bold border-b-2 border-tertiary-fixed-dim">
+						<a class="h-full flex items-center font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors pb-1" data-path="home" href="index.html">Home</a>
+						<a aria-current="page" class="h-full flex items-center transition-colors pb-1 text-on-surface font-bold border-b-2 border-tertiary-fixed-dim" data-path="initiatives" href="initiatives.html">Initiatives</a>
+						<a class="h-full flex items-center font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors pb-1" data-path="directory" href="directory.html">Directory</a>
+						<a class="h-full flex items-center font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors pb-1" data-path="resources" href="resources.html">Resources</a>
+						<a class="h-full flex items-center font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors pb-1" data-path="contact" href="contact.html">Contact</a>
+					</nav>
+					<button id="nav-toggle" class="nav-burger" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+						<span class="nav-burger-bar"></span>
+						<span class="nav-burger-bar"></span>
+						<span class="nav-burger-bar"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="w-full flex-1 pt-20 bg-surface">
+			<div class="max-w-7xl mx-auto px-margin-desktop py-space-xl">
+				<div class="flex flex-col w-full">
+					<!-- Top Utility Context / Breadcrumbs & Section Header -->
+					<section class="w-full pb-space-lg">
+						<div class="flex flex-col gap-space-xs max-w-3xl">
+							<!-- EDIT: INITIATIVES_PAGE_TITLE -->
+							<h1 class="page-title">Initiatives</h1>
+							<!-- EDIT: INITIATIVES_PAGE_SUBTITLE -->
+							<p class="font-body-lg text-body-lg text-on-surface-variant">Short Organizational Introduction</p>
+						</div>
+					</section>
+					<!-- Key Initiatives Grid (Exactly 3 Cards) -->
+					<section class="w-full py-space-md">
+						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop">
+							<!-- Card 1 -->
+							<article class="group relative flex flex-col bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-space-md">
+								<div class="relative overflow-hidden rounded-xl bg-surface-container mb-space-md">
+									<!-- EDIT: INITIATIVE_IMAGE -->
+									<img alt="Initiative Image" class="w-full h-56 object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" src="https://placehold.co/800x450/e2e8f0/475569?text=Initiative+Image">
+								</div>
+								<div class="flex flex-col flex-1 justify-between gap-space-md">
+									<!-- EDIT: INITIATIVE_TITLE -->
+									<h3 class="text-xl font-bold text-[#00205b]">Initiative Title</h3>
+									<div class="pt-space-xs">
+										<!-- EDIT: INITIATIVE_LINK -->
+										<a class="inline-flex items-center gap-2 text-sm font-semibold text-[#307fe2] hover:text-[#00205b]" href="https://facebook.com">
+											<span class="">External Link (Facebook/YouTube)</span>
+											<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+										</a>
+									</div>
+								</div>
+							</article>
+							<!-- Card 2 -->
+							<article class="group relative flex flex-col bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-space-md">
+								<div class="relative overflow-hidden rounded-xl bg-surface-container mb-space-md">
+									<!-- EDIT: INITIATIVE_IMAGE -->
+									<img alt="Initiative Image" class="w-full h-56 object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" src="https://placehold.co/800x450/e2e8f0/475569?text=Initiative+Image">
+								</div>
+								<div class="flex flex-col flex-1 justify-between gap-space-md">
+									<!-- EDIT: INITIATIVE_TITLE -->
+									<h3 class="text-xl font-bold text-[#00205b]">Initiative Title</h3>
+									<div class="pt-space-xs">
+										<!-- EDIT: INITIATIVE_LINK -->
+										<a class="inline-flex items-center gap-2 text-sm font-semibold text-[#307fe2] hover:text-[#00205b]" href="https://facebook.com">
+											<span class="">External Link (Facebook/YouTube)</span>
+											<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+										</a>
+									</div>
+								</div>
+							</article>
+							<!-- Card 3 -->
+							<article class="group relative flex flex-col bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-space-md">
+								<div class="relative overflow-hidden rounded-xl bg-surface-container mb-space-md">
+									<!-- EDIT: INITIATIVE_IMAGE -->
+									<img alt="Initiative Image" class="w-full h-56 object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" src="https://placehold.co/800x450/e2e8f0/475569?text=Initiative+Image">
+								</div>
+								<div class="flex flex-col flex-1 justify-between gap-space-md">
+									<!-- EDIT: INITIATIVE_TITLE -->
+									<h3 class="text-xl font-bold text-[#00205b]">Initiative Title</h3>
+									<div class="pt-space-xs">
+										<!-- EDIT: INITIATIVE_LINK -->
+										<a class="inline-flex items-center gap-2 text-sm font-semibold text-[#307fe2] hover:text-[#00205b]" href="https://facebook.com">
+											<span class="">External Link (Facebook/YouTube)</span>
+											<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+										</a>
+									</div>
+								</div>
+							</article>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class="w-full bg-[#00205b] text-surface-variant">
+			<div class="footer-container max-w-7xl mx-auto px-margin-desktop py-space-xl">
+				<div class="footer-bar">
+					<div class="flex flex-col gap-space-xs">
+						<div class="flex items-center gap-space-sm">
+							<img alt="DOST-SENTRO Logo" class="h-10 w-10 object-contain shrink-0" src="sentroLogo.png">
+							<span class="font-headline-sm text-headline-sm text-surface-container-lowest font-bold tracking-tight">
+								<!-- EDIT: FOOTER_BRAND -->DOST-SENTRO
+							</span>
+						</div>
+						<p class="font-body-sm text-body-sm text-surface-variant/80">
+							<!-- EDIT: FOOTER_COPYRIGHT -->START-DOST 2026 © All rights reserved.
+						</p>
+					</div>
+					<div class="flex items-center gap-space-md">
+						<a href="#" class="w-10 h-10 rounded-full bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-surface-container-lowest flex items-center justify-center transition-colors" title="Return to top">
+							<span class="material-symbols-outlined text-xl">arrow_upward</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

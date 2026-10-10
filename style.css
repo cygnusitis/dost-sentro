@@ -1,0 +1,307 @@
+/* DOST-SENTRO - global style.css (linked from every page) */
+
+/* ===== Fonts ===== */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;900&display=swap");
+
+/* ===== Base (extracted from the original inline <style> blocks) ===== */
+@layer base {
+
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		overscroll-behavior: none;
+	}
+
+	main>:first-child {
+		margin-top: 0 !important;
+	}
+
+	main>:last-child {
+		margin-bottom: 0 !important;
+	}
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* ===== Typography =====
+ * Titles (main headings)        -> Poppins Black (900)
+ * Subtitles (secondary headings) -> Montserrat
+ * Descriptions / body text       -> Poppins Regular (400)
+ * !important is used so these rules win over Tailwind utility classes.
+ */
+html,
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+main,
+main > section,
+main > div {
+    background-color: transparent !important;
+}
+
+body {
+    font-weight: 400;
+    background-color: #ffffff !important;
+    background-image: 
+        /* Layer 1 & 2: The Grid (Top) */
+        linear-gradient(to right, rgba(148, 159, 167, 0.12) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(148, 159, 167, 0.12) 1px, transparent 1px),
+        /* Layer 3: The Subtle Blue to Grey Wash (Bottom) */
+        linear-gradient(135deg, rgba(48, 127, 226, 0.15) 0%, rgba(255, 255, 255, 0) 50%, rgba(148, 159, 167, 0.3) 100%) !important;
+    
+    /* Size the grid to 40px, but stretch the color wash to 100% of the screen */
+    background-size: 40px 40px, 40px 40px, 100% 100% !important;
+    background-attachment: fixed !important;
+}
+
+h1 {
+	font-family: "Poppins", sans-serif !important;
+	font-weight: 900 !important;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat", sans-serif !important;
+}
+
+p {
+	font-family: "Poppins", sans-serif !important;
+	font-weight: 400 !important;
+}
+
+/* ===== Header: desktop nav + mobile burger menu ===== */
+.site-nav {
+	display: flex;
+}
+
+.nav-burger {
+	display: none;
+	width: 44px;
+	height: 44px;
+	padding: 0;
+	border: 0;
+	border-radius: 0.25rem;
+	background: transparent;
+	cursor: pointer;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	-webkit-tap-highlight-color: transparent;
+	transition: background-color 0.2s ease;
+}
+
+.nav-burger:hover {
+    background-color: rgba(0, 32, 91, 0.08); /* Adds a subtle, soft grey/blue background circle */
+}
+
+.nav-burger:hover .nav-burger-bar {
+    background-color: #307fe2; /* Changes the 3 bars to your lighter SENTRO blue */
+}
+
+.nav-burger:focus-visible {
+	outline: 2px solid #005db5;
+	outline-offset: 2px;
+}
+
+.nav-burger-bar {
+	display: block;
+	width: 24px;
+	height: 2px;
+	border-radius: 2px;
+	background: #00205b;
+	transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-burger.is-open .nav-burger-bar:nth-child(1) {
+	transform: translateY(7px) rotate(45deg);
+}
+
+.nav-burger.is-open .nav-burger-bar:nth-child(2) {
+	opacity: 0;
+}
+
+.nav-burger.is-open .nav-burger-bar:nth-child(3) {
+	transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Phones only: show the burger and turn the nav into a drop-down panel under the header.
+   (The page content below is NOT restacked - see "Scale-to-fit" section.) */
+@media (max-width: 767.98px) {
+	.site-header .site-header-container {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.nav-burger {
+		display: inline-flex;
+	}
+
+	.site-header .site-nav {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		height: auto;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0;
+		padding: 0.5rem 0;
+		background: #ffffff;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+	}
+
+	.site-header .site-nav.is-open {
+		display: flex;
+	}
+
+	.site-header .site-nav a {
+		height: auto;
+		padding: 0.875rem 1.5rem;
+		border-bottom: 0;
+		border-left: 4px solid transparent;
+	}
+
+	.site-header .site-nav a[aria-current="page"] {
+		border-left-color: #ffba3b;
+		background: #f2f3ff;
+	}
+}
+
+/* ===== Page titles: one shared style (matches the original Initiatives title) ===== */
+.page-title {
+	font-size: 3.5rem;
+	line-height: 1.15;
+	letter-spacing: -0.025em;
+	color: #00205b;
+}
+
+/* ===== Contact page: both column headings share one style ===== */
+.contact-heading {
+	font-family: "Poppins", sans-serif !important;
+	font-weight: 900 !important;
+	font-size: 2.25rem;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+}
+
+/* ===== Contact form: Full Name + Email side by side (50/50) ===== */
+.form-row-pair {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+/* ===== Footer: copyright left, Back-to-Top right, always on one row ===== */
+.footer-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
+.footer-bar > * {
+	min-width: 0;
+}
+
+.footer-bar a[title="Return to top"] {
+	flex-shrink: 0;
+}
+
+/* ===== Directory: officer card grids (CSS Grid) =====
+ * Desktop: multi-column | Tablet (769-1024px): 2 columns | Mobile (<=768px): 1 column
+ */
+.officer-grid {
+	display: grid;
+	gap: 1rem;
+}
+
+.officer-grid > * {
+	min-width: 0;
+}
+
+/* Executive Council row: Internal | General Secretary | External */
+.officer-grid--exec {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Committees: 6 cards -> 3 x 2 */
+.officer-grid--committees {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Provincial Representatives: 7 cards -> 4 + 3 (last row centered) */
+.officer-grid--provincial {
+	grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.officer-grid--provincial > * {
+	grid-column: span 2;
+}
+
+.officer-grid--provincial > :nth-child(5) {
+	grid-column: 2 / span 2;
+}
+
+@media (max-width: 1024px) {
+	.officer-grid--committees,
+	.officer-grid--provincial {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.officer-grid--provincial > *,
+	.officer-grid--provincial > :nth-child(5) {
+		grid-column: auto;
+	}
+
+	/* odd 7th card sits centered under the pair above */
+	.officer-grid--provincial > :last-child {
+		grid-column: 1 / -1;
+		width: calc(50% - 0.5rem);
+		justify-self: center;
+	}
+}
+
+/* ===== Mobile (<= 768px): stack for comfortable tapping ===== */
+@media (max-width: 768px) {
+	.form-row-pair {
+		grid-template-columns: 1fr;
+	}
+
+	.officer-grid--exec,
+	.officer-grid--committees,
+	.officer-grid--provincial {
+		grid-template-columns: 1fr;
+	}
+
+	.officer-grid--provincial > :last-child {
+		width: auto;
+		justify-self: stretch;
+	}
+
+	.page-title {
+		font-size: 2.25rem;
+	}
+
+	.contact-heading {
+		font-size: 1.875rem;
+	}
+
+	/* tighter side padding so content has room on phones */
+	main > .max-w-7xl,
+	.footer-container {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
