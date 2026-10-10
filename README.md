@@ -26,6 +26,17 @@ To update text, links, or images:
 3. Replace the text, `src` URL, or `href` link immediately following the comment.
 4. Commit and push your changes to the `main` branch. GitHub Pages will automatically rebuild and deploy the live site.
 
+## 📧 Activating the Contact Form (One-Time Setup)
+Because this website is a purely static front-end, the "Message us!" form in `contact.html` requires a third-party Form-as-a-Service (FaaS) provider to route messages to your inbox.
+
+Before receiving inquiries, the maintaining officer must complete this configuration:
+1. Register for a free account at a FaaS provider (such as Formspree, Web3Forms, or Formbold) using the official DOST-SENTRO email address.
+2. Create a new form project within the provider's dashboard to generate a unique endpoint URL (e.g., `https://formspree.io/f/your-unique-id`).
+3. Open the `contact.html` file in this repository.
+4. Locate the form initialization tag: <form action="YOUR_FORMSPREE_ENDPOINT" class="flex flex-col gap-space-md" method="POST">
+5. Replace the `YOUR_FORMSPREE_ENDPOINT` placeholder text with the live URL generated in Step 2.
+6. Commit and push the changes. The form will now securely forward all web submissions directly to the organization's inbox.
+
 ## 🌐 Local Development & Deployment
 **To view locally:**
 No local server or build steps are required. Simply download the repository and open `index.html` in any modern web browser.
@@ -38,4 +49,4 @@ No local server or build steps are required. Simply download the repository and 
 5. The website will be live at `https://[your-username].github.io/[repo-name]/`.
 
 ---
-*Developed for DOST-SENTRO (Term 2026).*
+*Developed for DOST-SENTRO 2026-2027 by START-DOST 2026.*
